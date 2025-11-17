@@ -1,0 +1,52 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+  font-family: 'Courier New', Courier, monospace;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+ }
+ body{ 
+    background-color: black;
+        border: 2px solid transparent;
+ }
+
+ header{
+   right: 0;
+   top: 0;
+   z-index: 100;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content:space-between;
+   padding: 15px 3%;
+   background-color: transparent;
+
+ }
+.navalist{
+    color: white;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    
+ }
+ 
+
+ .navalist:hover{
+    display: flex;
+    color: white;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    animation: 2s;
+    
+ }
+ ul{
+   display: flex;
+   
+}
+
+ .logo{
+ font-size: 30px;
+ font-weight: 800;
+  }
+  
