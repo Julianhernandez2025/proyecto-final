@@ -9,8 +9,7 @@
  }
  body{ 
     background-color: black;
-        border: 2px solid transparent;
- }
+   }
 
  header{
    right: 0;
@@ -23,30 +22,66 @@
    padding: 15px 3%;
    background-color: transparent;
 
- }
-.navalist{
-    color: white;
-    box-sizing: border-box;
-    border: 2px solid transparent;
-    
- }
- 
 
- .navalist:hover{
-    display: flex;
-    color: white;
-    box-sizing: border-box;
-    border: 2px solid transparent;
-    animation: 2s;
-    
- }
- ul{
-   display: flex;
-   
-}
 
  .logo{
  font-size: 30px;
  font-weight: 800;
   }
+
+
   
+ }
+.navalist{
+    color: white;
+    box-sizing: border-box;
+   
+ }
+ 
+ 
+ .navlist a { 
+      margin-left: 60px;
+     font-weight: 600;
+     border-bottom: 2px solid transparent;
+     transition: all .5s ease;
+    }
+
+     .navlist a:hover{
+     margin-left: 60px;
+     font-weight: 600;
+     border-bottom: 2px solid white;
+     transition: all .5s ease;
+    }
+
+    ul{
+      display: flex;
+    }
+
+    #menu-icon{
+      display: none;
+      color: white;
+      font-size: 35px;
+      z-index: 101;
+      cursor: pointer;
+    }
+    #menu-toggle{
+      display: none;
+
+    }
+
+    .menu-icon-action{
+      display: block;
+    }
+
+    .hero{
+      height: 100%;
+      width: 100%;
+      min-height: 100vh;
+      background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 2rem;
+    }
+
