@@ -225,7 +225,7 @@ section{
 
   @media (max-width: 768px) {
   header ul {
-    display: none; /* Se mostrará con JS al pulsar el icono */
+    display: block; 
   }
 }
 
@@ -273,4 +273,4 @@ section{
  #menu-toggle:checked + label.menu-icon-action + ul{
   right: 0;
  }
-}
+
