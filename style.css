@@ -60,8 +60,12 @@ ul{
   display: none;
 }
 
+#menu-toggle:checked ~ .navlist {
+  display: none;
+}
+
 .menu-icon-action {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -187,28 +191,28 @@ section{
   transform: translateY(-5px);
 }
 
-@media (max-width:992px) {
+@media (max-width:992px){
   section{
     padding: 0 3%;
-    transition: 0.2s;
+    transition: .2s;
   }
 
-  .hero-text{
+   .hero-text{
     padding-top: 0;
-  }
-
-  .hero-img{
+   }
+   .hero-img{
     text-align: center;
-  }
+   }
 
-  .hero-img img{
+   .hero-img img {
     width: 80%;
-    margin: 10% 0 0 10%;
+    margin: 10% 0 0 10%; 
   }
 
   .hero-text p{
-    font-size: 70%;
+   font-size: 70%;
   }
+
 
   .icons{
     display: none;
@@ -219,57 +223,49 @@ section{
   }
 }
 
-@media (max-width:768px){
-
-  .menu-icon-action {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media (max-width:708px){
+  .menu-icon-action{
+    display: block;
   }
 
-  #menu-icon { 
-     display: block;
+  #menu-icon{
+    display: block;
   }
-  
-  .hero-text {
+
+  .hero-text{
     text-align: center;
     padding-top: 100px;
   }
 
-  .hero-img img {
+  .hero-img{
     margin: 0;
   }
 
-  .hero {
+  .hero{
     height: 100%;
     gap: 1rem;
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr;
   }
-
-  .navlist {
+  
+  .navlist{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 200px;
+    height: 180px;
+    background-color: rgb(4, 45, 65);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0,0,0,0.9);
-    padding: 1rem 2rem;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
+    align-items: center;
+    padding: 30px 20px;
+    transition: all .1s ease;
   }
 
-  /* Mostrar menú al hacer click en el icono */
-  #menu-toggle:checked + label + .navlist {
-    max-height: 500px;
+  .navlist a{
+    display: block;
+    margin: 7px 0;
   }
-
-  .navlist a {
-    color: white;
-    font-size: 18px;
-    margin: 15px 0;
-  }
+ #menu-toggle:checked + label.menu-icon-action + ul{
+  right: 0;
+ }
 }
-
