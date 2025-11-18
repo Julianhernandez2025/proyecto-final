@@ -223,7 +223,12 @@ section{
   }
 }
 
-@media (max-width:708px){
+  @media (max-width: 768px) {
+  header ul {
+    display: none; /* Se mostrará con JS al pulsar el icono */
+  }
+}
+
   .menu-icon-action{
     display: block;
   }
