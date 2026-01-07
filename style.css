@@ -37,6 +37,10 @@ header{
   transition: all .5s ease;
 }
 
+.navlist li{
+  display: inline-block;
+}
+
 .navlist a:hover{
   margin-left: 60px;
   font-weight: 600;
